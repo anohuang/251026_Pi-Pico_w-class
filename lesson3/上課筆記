@@ -8,3 +8,4 @@ uv add
 add後面空一格輸入想要安裝的外掛套件，即可自動安裝並同步
 uv remove
 remove後面空一格輸入想要移除的外掛套件，即可自動移除並同步
+.py是真正的專案檔  .ipynb是學習和測試檔(需要安裝ipykernel外掛和延伸需要安裝ipykernel外掛和延伸模組jupyt模組jupyter)
