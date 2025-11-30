@@ -79,7 +79,7 @@ def main():
         time.sleep(1)
         
         # 發布測試數據
-        publish_test_data(client, count=10, interval=2)
+        publish_test_data(client, count=15, interval=1)
         
         # 關閉連線
         client.loop_stop()
