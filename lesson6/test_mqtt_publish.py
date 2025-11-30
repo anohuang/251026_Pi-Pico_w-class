@@ -21,7 +21,7 @@ def on_connect(client, userdata, flags, reason_code, properties):
     else:
         print(f"✅ 成功連接到 MQTT Broker")
 
-def publish_test_data(client, count=15, interval=1):
+def publish_test_data(client, count=10, interval=3):
     """
     發布測試數據
     
@@ -79,7 +79,7 @@ def main():
         time.sleep(1)
         
         # 發布測試數據
-        publish_test_data(client, count=15, interval=1)
+        publish_test_data(client, count=10, interval=3)
         
         # 關閉連線
         client.loop_stop()
