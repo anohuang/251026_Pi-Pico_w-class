@@ -21,7 +21,7 @@ def on_connect(client, userdata, flags, reason_code, properties):
     else:
         print(f"✅ 成功連接到 MQTT Broker")
 
-def publish_test_data(client, count=10, interval=2):
+def publish_test_data(client, count=15, interval=1):
     """
     發布測試數據
     
