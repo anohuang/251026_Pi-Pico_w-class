@@ -29,8 +29,14 @@ def mqtt_connect():
 # 初始連線
 mqtt_connect()
 
+# 在 while True 之前宣告計數器
+counter = 0
+
 # 每隔 10 秒發布一次訊息
 while True:
+    # 每次迴圈加 1
+    counter += 1
+
     # 產生亂數資料
     temperature = round(random.uniform(20.0, 35.0), 1)  # 溫度 20~35°C
     humidity = round(random.uniform(40.0, 80.0), 1)     # 濕度 40~80%
@@ -49,7 +55,7 @@ while True:
     # 嘗試發布，如果失敗則重新連線
     try:
         client.publish(TOPIC.encode('utf-8'), message.encode('utf-8'))
-        print(f"已發布訊息:")
+        print(f"已發布訊息: {counter}")
         print(f"  溫度: {temperature}°C")
         print(f"  濕度: {humidity}%")
         print(f"  燈光: {light_status}")
