@@ -2,7 +2,7 @@
 
 #while True:
 #    print("Hello! pico!")
- #   time.sleep(3)
+#   time.sleep(3)
 
 import wifi_connect
 
