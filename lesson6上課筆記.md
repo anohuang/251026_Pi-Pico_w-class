@@ -7,7 +7,8 @@
  ###  b. 輸入git config --global user.email "xxxxx@gmail.com"
  ###  c. 輸入git config --global pull.rebase false >>問拉下來後是否建立分支或混合，false代表混合
 ## 5. 做完初始化可輸入git config --list來確認是否設定成功 >>如果出現上述輸入的名稱即表示成功
-## 6. 安裝uv >> 於cursor或antigravity中開啟終端機，注意要選poweshell (如果已經有安裝uv的repo，可略過此步驟，直接到第7步)
+## 6. 安裝uv >> 於cursor或antigravity中開啟終端機，注意要選poweshell 
+   _**(如果已經有安裝uv的repo，可略過此步驟，直接到第7步)**_
 ###   a. 輸入powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 ## 7. 做uv虛擬環境
 ###   a. 輸入uv venv
