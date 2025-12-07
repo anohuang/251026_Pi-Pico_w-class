@@ -7,7 +7,7 @@
 import wifi_connect as wifi #as 後面接的字可替代前述之function名稱，但下面記得要一併更換
 
 # 嘗試連線 WiFi
-wifi.connect() #括弧內沒寫的話表示全用預設值
+#wifi.connect() #括弧內沒寫的話表示全用預設值
 #connect(ssid=WIFI_SSID, password=WIFI_PASSWORD, retry=20) 上面括弧內有三個引述名稱及預設參數值
 #ssid、password和retry為引述名稱
 #括弧內如果有打引述名稱的話，位置可任意調動; 若只打參數值則必須按照function內的引述名稱位置填寫
@@ -24,10 +24,11 @@ wifi.connect() #括弧內沒寫的話表示全用預設值
 
 import wifi_connect as wifi
 import time
-from umqtt.simple import MQTTClient
+from umqtt.simple import MQTTClient  #<--這段是在pico裡面用的
 
 # MQTT 設定
-MQTT_BROKER = "172.20.10.3"  # 公開測試用 Broker
+# MQTTX裡面訂閱使用#，表示訂閱所有主題
+MQTT_BROKER = "172.20.10.3"  # 公開測試用 Broker #broker裡要用伺服器的IP，pico和伺服器要同網域
 MQTT_PORT = 1883
 CLIENT_ID = "pico_w_publisher"
 TOPIC = "pico/test"
