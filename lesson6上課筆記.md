@@ -10,7 +10,7 @@
 ## 5. 做完初始化可輸入git config --list來確認是否設定成功 >>如果出現上述輸入的名稱即表示成功
 ## 6. 安裝uv >> 於windows中開啟poweshell終端機
    a. 輸入powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
-## 7. 安裝完後再回到cursor中開啟command終端機做uv虛擬環境
+## 7. 做uv虛擬環境 >>安裝完後再回到cursor中開啟command終端機
    a. 輸入uv venv，即可在檔案最上方看到.venv資料夾  
    b. 輸入uv sync，即可將.toml的所有套件全部下載到.venv中  
    c. 新的VScode編輯軟體記得要安裝jupyter notebook  
