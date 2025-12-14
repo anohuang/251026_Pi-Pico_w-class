@@ -3,7 +3,7 @@
 ## 2. 於cursor或antigravity中開啟終端機，注意要選cmd
 ## 3. 可先輸入git --version來確認是否安裝成功
 ## 4. 做git初始化
-   a. 輸入git onfig --global user.name "xxxxxxxx" >>名稱不重要，只是裝置名稱  
+   a. 輸入git config --global user.name "xxxxxxxx" >>名稱不重要，只是裝置名稱  
    b. 輸入git config --global user.email "xxxxx@gmail.com"  
    c. 輸入git config --global pull.rebase false  
    -->問拉下來後是否建立分支或混合，false代表混合
