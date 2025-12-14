@@ -8,12 +8,11 @@
    c. 輸入git config --global pull.rebase false  
    -->問拉下來後是否建立分支或混合，false代表混合
 ## 5. 做完初始化可輸入git config --list來確認是否設定成功 >>如果出現上述輸入的名稱即表示成功
-## 6. 安裝uv >> 於cursor或antigravity中開啟終端機，注意要選poweshell 
-   ### _**(如果已經有安裝uv的repo，可略過此步驟，直接到第7步)**_
+## 6. 安裝uv >> 於windows中開啟poweshell終端機
    a. 輸入powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
-## 7. 做uv虛擬環境
-   a. 輸入uv venv  
-   b. 輸入uv sync  
+## 7. 安裝完後再回到cursor中開啟command終端機做uv虛擬環境
+   a. 輸入uv venv，即可在檔案最上方看到.venv資料夾  
+   b. 輸入uv sync，即可將.toml的所有套件全部下載到.venv中  
    c. 新的VScode編輯軟體記得要安裝jupyter notebook  
    d. 於ipynb檔案裝選取虛擬環境的核心  
 ## 8. 以上完成即可複製repo至新裝置中，未來連線到git都記得要先同步
